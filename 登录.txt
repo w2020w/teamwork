@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            margin-top: 40px;
+        }
+        body{
+            background-image: url("图.jpg");
+            background-size: cover;
+        }
+
+        div{
+            position:absolute;
+            top: 60%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        input{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 15px;
+        }
+        button{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 15px;
+            box-sizing: content-box;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center" style="font-family: YouYuan" >
+        大学生公共资源管理平台
+    </h1>
+    <div>
+        <form>
+            <input type="text" required="required" placeholder="用户名"/>
+            <input type="password" required="required" placeholder="密码"/>
+            <button type="submit" >登录</button>
+            <button type="submit">注册</button>
+            <button type="submit">找回密码</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
