@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="zhucestyle.css"/>
+</head>
+<body>
+    <form method="post" action="URL" autocomplete="on">
+        <label>
+            <h1>用户注册页面</h1>
+            <hr/>
+        </label>
+        <div>
+            用户名：<input type="text" placeholder="请输入用户名" name="username" required/><br><br>
+            密  码：<input type="password" placeholder="请输入密码" name="password" required/><br><br>
+            确  认：<input type="text" placeholder="请再次输入密码" name="repeat" required/><br><br>
+            <button>提交注册</button>
+        </div>
+    </form>
+</body>
+</html>
+
+css.
+label{
+    margin-top: 50px;
+    text-align: center;
+    color: skyblue;
+}
+h1{
+    padding-top: 25px;
+}
+hr{
+    width: 500px;
+    size: 15px;
+    height: 3px;
+    background-color: skyblue;
+    border: 0;
+}
+form{
+    box-shadow: 10px 10px 15px black;
+    width: 600px;
+    height: 450px;
+    margin-top: 100px;
+    margin-left: 400px;
+    background-color: white;
+}
+div{
+    text-align: center;
+    color: skyblue;
+}
+button{
+    background-color: deepskyblue;
+    color: white;
+    padding: 10px;
+    border: 0;
+}
+body{
+    background-color: gainsboro;
+    color: dodgerblue;
+}
