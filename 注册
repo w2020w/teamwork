@@ -20,7 +20,7 @@
             color: black;
         }
         button{
-            background-color: deepskyblue;
+            background-color: grey;
             color: white;
             padding: 10px;
             border: 0;
@@ -31,12 +31,14 @@
             <h1 align="center" >
                 学生注册
             </h1>
-        <div>
-            <input type="text" placeholder="请输入用户名" name="username" required/><br><br>
-            <input type="password" placeholder="请输入密码" name="password" required/><br><br>
-            <input type="password" placeholder="请再次输入密码" name="repeat" required/><br><br>
-            <input type="text" placeholder="密保问题：身份证后六位" name="secret" required><br><br>
-            <button>提交注册</button>
-        </div>
+            <div>
+                <form action="doUser" method="get">
+                    <input type="text" placeholder="请输入用户名" name="uname" required/><br><br>
+                    <input type="password" placeholder="请输入密码" name="upwd1" required/><br><br>
+                    <input type="password" placeholder="请再次输入密码" name="upwd2" required/><br><br>
+                    <input type="birthday" placeholder="密保问题：身份证后六位" name="ubdy" required><br><br>
+                    <button type="submit">提交注册</button>
+                </form>
+            </div>
 </body>
 </html>
