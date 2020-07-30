@@ -31,15 +31,15 @@
     </style>
 </head>
 <body>
-<form method="post">
+<form action="doRenew" method="post">
     <h1 align="center">
         重置密码
     </h1>
     <div>
-          用 户 名：<input type="password" placeholder="请输入用户名" name="username" required/><br><br>
-          重置密码：<input type="password" placeholder="请输入新密码" name="password" required/><br><br>
-          确认输入：<input type="password" placeholder="请再次输入新密码" name="repeat" required/><br><br>
-                    <button>确定</button>
+          用 户 名：<input type="text" placeholder="请输入用户名" name="uname" required/><br><br>
+          重置密码：<input type="password" placeholder="请输入新密码" name="upwd1" required/><br><br>
+          确认输入：<input type="password" placeholder="请再次输入新密码" name="upwd2" required/><br><br>
+                    <button type="submit">确定</button>
     </div>
 </form>
 </body>
