@@ -1,135 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>主页</title>
-    <style type="text/css">
-        #t1{
-            text-align: center;
-            color: #000;
-            vertical-align: center;
+<meta charset="utf-8">
+<title>zhuyee</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("../static/tupian.jpg");
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+    background-color: gainsboro;
+  color: black;
+}
+#t2{
+  text-align: center;
         }
-        #t2{
-            text-align: center;
-        }
-    </style>
+
+
+</style>
 </head>
 <body>
-    <table width="100%">
-        <tbody>
-        <tr>
-            <td id="t1" bgcolor="#8fbc8f" height="50px">
-                <h1 style="font-family: YouYuan">大学生公共资源管理平台</h1>
-            </td>
-        </tr>
-        </tbody>
-    </table>
 
-    <form >
-        <input id="t2"type="text" required="required" placeholder="请输入课程名称" />
+<div class="header">
+  <h1 style="font-family: YouYuan" >大学生公共资源管理平台</h1>
+  <p></p>
+</div>
+
+<div class="topnav">
+  <a href="#">课程列表</a>
+  <a href="#">我的课程</a>
+  <a href="#">链接</a>
+  <!--<a href="#" style="float:right">链接</a>-->
+     <form >
+        <input id="t2"type="text" required="required" placeholder="请输入课程名称"
+          name="kechengmingcheng" style="float: right" />
     </form>
+</div>
 
-    <table  >
-       <tbody >
-       <tr >
-           <td >
-               <ul>
-                   <li>课程列表</li>
-               </ul>
-               <ul>
-                   <li>我的课程</li>
-               </ul>
-           </td>
-       </tr>
-       </tbody>
-   </table>
-
-    <table width="80%" align="right">
-        <tbody >
-        <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-        </tr>
-        </tbody>
-    </table>
-
-<table width="80%" align="right">
+<table width="100%" align="center">
         <tbody>
         <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
+            <td  bgcolor="#afeeee" height="180px">
+                <a href="www.baidu.com"></a>
+            </td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
         </tr>
         </tbody>
-    </table>
 
-<table width="80%" align="right">
+  <table width="100%" align="center">
         <tbody>
         <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
+            <td   height="20px" align="center">asg</td>
+            <td   height="20px" align="center">dsg</td>
+            <td   height="20px" align="center">dgs</td>
+            <td   height="20px" align="center">sdg</td>
         </tr>
         </tbody>
-    </table>
 
-<table width="80%" align="right">
+    <table width="100%" align="center">
         <tbody>
         <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
         </tr>
         </tbody>
-    </table>
 
-<table width="80%" align="right">
+      <table width="100%" align="center">
         <tbody>
         <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
+            <td  bgcolor="#afeeee" height="180px"></td>
         </tr>
         </tbody>
-    </table>
 
-<table width="80%" align="right">
-        <tbody>
-        <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-        </tr>
-        </tbody>
-    </table>
 
-<table width="80%" align="right">
-        <tbody>
-        <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-        </tr>
-        </tbody>
-    </table>
-
-<table width="80%" align="right">
-        <tbody>
-        <tr>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-            <td  bgcolor="#afeeee" height="100px"></td>
-        </tr>
-        </tbody>
-    </table>
 </body>
 </html>
