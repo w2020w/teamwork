@@ -27,7 +27,10 @@
         身份验证
     </h1>
     <div>
-密保问题：<input type="text"placeholder="请输入您的身份证后六位" name="answer">
-          <button>确定</button>
+        <form action="doBdy" method="get">
+用 户 名：<input type="text" placeholder="请输入用户名" name="uname"><br><br>
+密保问题：<input type="birthday"placeholder="请输入您的身份证后六位" name="ubdy"><br><br>
+          <button type="submit">确定</button>
+        </form>
     </div>
 </body>
