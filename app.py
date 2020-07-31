@@ -1,6 +1,8 @@
 from flask import Flask,render_template,request,flash
 import  pymysql
 
+
+
 app = Flask(__name__)
 #用户安全问题，设置key值，值随意给出，给的难道越大，破解与麻烦
 app.secret_key="123344"
@@ -87,7 +89,7 @@ def doLogin():
     print(conn)
     cls = conn.cursor()
     #前端传递的数据，进行到数据库中进行验证
-    cls.execute("select * from myuser where uname=%s and upwd=%s",[name,pwd])
+    cls.execute("select * from myuser where uname=%s ",[name])
     result = cls.fetchone()
     if result is None:
         flash("用户未注册")
@@ -144,9 +146,9 @@ def findpwd():
 
 @app.route("/resetpwd",methods=["POST"])
 def resetpwd():
-    name = request.values.get("uname")
-    pwd1 = request.values.get("upwd1")
-    pwd2 = request.values.get("upwd2")
+    name = request.form.get("uname")
+    pwd1 = request.form.get("upwd1")
+    pwd2 = request.form.get("upwd2")
 
     conn = pymysql.connect(
         host="localhost",
@@ -170,6 +172,7 @@ def resetpwd():
 
             flash("重置成功")
             rows = cls.execute("update myuser set upwd =%s where uname=%s", [pwd1, name])
+            conn.commit()
             print("name", name, "pwd1:", pwd1)
             return render_template("login.html")
         else:
@@ -177,5 +180,8 @@ def resetpwd():
             return render_template("resetpwd.html")
 
 
+
+
 if __name__ == '__main__':
     app.run()   #启动服务器
+
