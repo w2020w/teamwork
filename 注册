@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>学生注册</title>
-    <style>
+    <style type="text/css">
         {
         margin:0;
         padding:0;
         }
         h1{
-            padding-top: 25px;
+            padding-top: 40px;
         }
         body{
-            background-color: gainsboro;
-            color: black;
+            background-image:url("../static/tupian.jpg");
+            background-size: cover;
         }
         div{
-            text-align: center;
-            color: black;
+            position:absolute;
+            top: 60%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        input{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 15px;
         }
         button{
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            border: 0;
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 15px;
+            box-sizing: content-box;
+            border-radius: 10px;
+            background-color: rgba(75, 180, 79, 0.81);
         }
     </style>
 </head>
+<script src="../static/jquery.min.js"></script>
+<script src="../static/zhuce.js"></script>
 <body>
-            <h1 align="center" >
+            <h1 align="center">
                 学生注册
             </h1>
             <div>
-                <form action="doUser" method="get">
-                    <input type="text" placeholder="请输入用户名" name="uname" required/><br><br>
-                    <input type="password" placeholder="请输入密码" name="upwd1" required/><br><br>
-                    <input type="password" placeholder="请再次输入密码" name="upwd2" required/><br><br>
-                    <input type="birthday" placeholder="密保问题：身份证后六位" name="ubdy" required><br><br>
+                <form action="doUser" method="get" onsubmit="return checkAll()">
+                    <input type="text" placeholder="请输入用户名" name="uname" required="required" id="uid" onblur="checkName()"/>
+                    <span id="sid"></span>
+                    <br><br>
+                    <input type="password" placeholder="请输入密码" name="upwd1" required="required" id="pid" onblur="checkPwd()"/>
+                    <span id="upid"></span>
+                    <br><br>
+                    <input type="password" placeholder="请再次输入密码" name="upwd2" required="required" id="pid1" onblur="checkPwd1()"/>
+                    <span id="upid1"></span>
+                    <br><br>
+                    <input type="birthday" placeholder="密保问题：身份证后六位" name="ubdy" required="required">
+                    <br><br>
                     <button type="submit">提交注册</button>
                 </form>
             </div>
