@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <title>重置密码</title>
     <style>
-         input{
+         {
+        margin:0;
+        padding:0;
+        }
+        h1{
+            padding-top: 40px;
+        }
+        body{
+            background-image:url("../static/tupian.jpg");
+            background-size: cover;
+        }
+        div{
+            position:absolute;
+            top: 60%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        input{
             width: 298px;
             height: 30px;
             border: 1px solid black;
             margin-top: 15px;
-         }
-         button{
-            background-color: grey;
-            color: white;
-            padding: 10px;
-            border: 0;
-         }
-
-         div{
-            text-align: center;
-            color: black;
-         }
-
-         form{
-            box-shadow: 10px 10px 15px black;
-            width: 600px;
-            height: 450px;
-            margin-top: 100px;
-            margin-left: 400px;
-            background-color: white;
-         }
+        }
+        button{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 15px;
+            box-sizing: content-box;
+            border-radius: 10px;
+            background-color: rgba(75, 180, 79, 0.81);
+        }
     </style>
 </head>
 <script src="../static/jquery.min.js"></script>
@@ -41,6 +49,7 @@
         重置密码
     </h1>
     <div>
+          用 户 名：<input type="text" placeholder="请输入用户名" name="uname" required/><br><br>
           重置密码：<input type="password" placeholder="请输入新密码" name="upwd1" required
                       id="pid" onblur="checkPwd()"/>
                     <span id="sid"></span> <br><br>
