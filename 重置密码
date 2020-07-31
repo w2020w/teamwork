@@ -44,7 +44,7 @@
 <script  src="../static/chongzhi.js"></script>
 
 <body>
-<form action="doRenew" method="post" onsubmit="return checkAll()">
+<form action="resetpwd" method="post" onsubmit="return checkAll()">
     <h1 align="center">
         重置密码
     </h1>
