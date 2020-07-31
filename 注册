@@ -48,17 +48,16 @@
             </h1>
             <div>
                 <form action="doUser" method="get" onsubmit="return checkAll()">
-                    <input type="text" placeholder="请输入用户名" name="uname" required="required" id="uid" onblur="checkName()"/>
-                    <span id="sid"></span>
-                    <br><br>
-                    <input type="password" placeholder="请输入密码" name="upwd1" required="required" id="pid" onblur="checkPwd()"/>
-                    <span id="upid"></span>
-                    <br><br>
-                    <input type="password" placeholder="请再次输入密码" name="upwd2" required="required" id="pid1" onblur="checkPwd1()"/>
-                    <span id="upid1"></span>
-                    <br><br>
-                    <input type="birthday" placeholder="密保问题：身份证后六位" name="ubdy" required="required">
-                    <br><br>
+                    <input type="text" placeholder="请输入用户名" name="uname" required
+                           id="uid" onblur="checkmyName()"/>
+                           <span id="usid"></span><br><br>
+                    <input type="password" placeholder="请输入密码" name="upassword1" required
+                           id="myid" onblur="checkmyPwd()"/>
+                           <span id="upid"></span><br><br>
+                    <input type="password" placeholder="请再次输入密码" name="upassword2" required
+                           id="myid1" onblur="checkmyPwd1()"/>
+                           <span id="upid1"></span><br><br>
+                    <input type="birthday" placeholder="密保问题：身份证后六位" name="ubdy" required><br><br>
                     <button type="submit">提交注册</button>
                 </form>
             </div>
