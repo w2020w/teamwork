@@ -1,36 +1,75 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <title>身份验证</title>
+
     <style>
+
          input{
+
             width: 298px;
+
             height: 30px;
+
             border: 1px solid black;
+
             margin-top: 15px;
+
          }
+
          button{
+
             background-color: grey;
+
             color: white;
+
             padding: 10px;
+
             border: 0;
+
          }
+
          div{
+
             text-align: center;
+
             color: black;
+
          }
+
     </style>
+
 </head>
+
 <body>
+
     <h1 align="center">
+
         身份验证
+
     </h1>
+
     <div>
+         {% for message in get_flashed_messages() %}
+            {{ message }}
+
+    {% endfor %}
         <form action="findpwd" method="get">
+
 用 户 名：<input type="text" placeholder="请输入用户名" name="uname"><br><br>
+
 密保问题：<input type="birthday"placeholder="请输入您的身份证后六位" name="ubdy"><br><br>
+
           <button type="submit">确定</button>
+
         </form>
+
     </div>
+
 </body>
