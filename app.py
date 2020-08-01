@@ -12,7 +12,7 @@ app.secret_key="123344"
 
 
 #接收前端注册界面提交的数据
-@app.route("/doUser")
+@app.route("/doUser",methods=["POST"])
 def doUser():
     #获取前端的用户名
     name = request.values.get("uname")
@@ -26,10 +26,10 @@ def doUser():
     #到数据库中进行查询
 
          conn = pymysql.connect(
-             host="localhost",
+             host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
              port=3306,
              user="root",
-             password="root",
+             password="123456",
              db="mython",
              charset="utf8"
          )
@@ -79,10 +79,10 @@ def doLogin():
     print(name,pwd)
     #到数据库中进行校验
     conn = pymysql.connect(
-        host="localhost",
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
         port=3306,
         user="root",
-        password="root",
+        password="123456",
         db="mython",
         charset="utf8"
     )
@@ -102,6 +102,7 @@ def doLogin():
             flash("user or password  not  true")
             return render_template("login.html")
         else:
+            flash("登陆成功")
             cls.execute("select * from myuser ")
             result = cls.fetchall()
             conn.close()
@@ -121,10 +122,10 @@ def findpwd():
     # 到数据库中进行查询
 
     conn = pymysql.connect(
-         host="localhost",
+         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
          port=3306,
          user="root",
-         password="root",
+         password="123456",
          db="mython",
          charset="utf8"
      )
@@ -151,10 +152,10 @@ def resetpwd():
     pwd2 = request.form.get("upwd2")
 
     conn = pymysql.connect(
-        host="localhost",
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
         port=3306,
         user="root",
-        password="root",
+        password="123456",
         db="mython",
         charset="utf8"
     )
