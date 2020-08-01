@@ -96,7 +96,7 @@
 
             <div>
 
-                <form action="doUser" method="get" onsubmit="return checkAll()">
+                <form action="doUser" method="post" onsubmit="return checkAll()">
 
                     <input type="text" placeholder="请输入用户名" name="uname" required
 
