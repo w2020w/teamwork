@@ -46,6 +46,10 @@
     <h1 align="center" style="font-family: YouYuan" >
         大学生公共资源管理平台
     </h1>
+     {% for message in get_flashed_messages() %}
+
+    <div class=flash1>{{ message }}</div>
+    
     <div>
         <form action="doLogin" method="post">
             <input type="text" name="uname" required="required" placeholder="用户名" />
