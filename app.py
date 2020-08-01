@@ -276,6 +276,13 @@ def resetpwd():
             flash("输入密码不一致")
 
             return render_template("resetpwd.html")
+        
+#查询用户名是否存在
+@app.route("/checkUName")
+def checkUName():
+    name = request.args.get("name")
+    print(name)
+    return  mydb.selectName(name)
 
 
 if __name__ == '__main__':
