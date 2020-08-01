@@ -1,11 +1,11 @@
 import  pymysql
 def selectName(uname):
     conn = pymysql.connect(
-        host="localhost",
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
         port=3306,
         user="root",
-        password="827521",
-        db="mypython",
+        password="123456",
+        db="mython",
         charset="utf8"
     )
     print(conn)
