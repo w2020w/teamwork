@@ -8,10 +8,28 @@
             margin: 0;
             padding:0;
         }
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: gainsboro;
+            color: black;
+        }
         .wrap{
             width: 600px;
             margin: 0px auto;
-
         }
         .menu{
             width: 600px;
@@ -75,6 +93,18 @@
             <li>大学名称</li>
         </ul>
     </div>
+
+<div class="topnav">
+    <a href="index.html">返回</a>
+    <a href="mycourse.html">我的课程</a>
+    <a href="#">链接</a>
+    <div style="text-align: right; background-color: white"><br>
+          <input type="text" name="search" style="width: 300px; height: 25px; border: 1px solid gray; outline: none; border-radius: 2px;"
+          placeholder="请输入课程名称" />
+          <button type="submit"  name="research"/>搜索</button>
+        </div><br>
+</div>
+
     <div class="content">
         <ul>
             <li>
@@ -133,7 +163,36 @@
                 </div>
             </li>
 
+            <li>
+                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3>课程名称</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3>课程名称</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
         </ul>
+
     </div>
 </div>
 </body>
