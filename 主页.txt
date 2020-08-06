@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-
 <title>zhuyee</title>
-
 <style>
 * {
-
    box-sizing:border-box
-
 }
-
 body {
 
   font-family: Arial;
@@ -24,9 +16,7 @@ body {
   background: white;
 
 }
-
 /* 头部标题 */
-
 .header {
 
   padding: 30px;
@@ -382,33 +372,34 @@ body{
             </td>
             <td>
                 <a href="#">
-                    <img src="../static/qinghua.jpg" width="150px"/>
+                    <img src="../static/hagong.jpg" width="150px"/>
                 </a><br>
-                <p>清华大学</p>
+                <p>哈尔滨工业大学</p>
             </td>
             <td>
                 <a href="#">
-                    <img src="../static/renda.jpg" width="150px"/>
+                    <img src="../static/xijiao.jpg" width="150px"/>
                 </a><br>
-                <p>中国人民大学</p>
+                <p>西安交通大学</p>
             </td>
             <td>
                 <a href="#">
-                    <img src="../static/beida.png" width="150px"/>
+                    <img src="../static/zhongchuan.jpg" width="150px"/>
                 </a><br>
-                <p>北京大学</p>
+                <p>中国传媒大学</p>
             </td>
             <td>
                 <a href="#">
-                    <img src="../static/beida.png" width="150px"/>
+                    <img src="../static/beishi.jpg" width="150px"/>
                 </a><br>
-                <p>北京大学</p>
+                <p>北京师范大学</p>
             </td>
         </tr>
     </table>
 </div>
 <div class="footer">
   <p>底部区域</p>
+</div>
 </div>
 </body>
 </html>
