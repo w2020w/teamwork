@@ -104,14 +104,15 @@
 <div class="content">
         <ul>
             <li>
+
                 <div class="left"><img src="../static/tupian.jpg" alt=""></div>
                 <div class="right">
                     <div class="right_top">
-                        <h3>课程名称</h3>
+                        <h3>{{ u[2] }}</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span>
+                            <span>{{ u[1] }}</span>  <span>课时数：xx</span>  <span>讲师:{{ u[3] }}</span>
                         </div>
                         <div class="middle"
                         <span>参课人数：</span>
@@ -127,13 +128,13 @@
         <h4>课程简介</h4>
     </div>
     <div class="ke_content">
-        <span>......</span>
+        <span>暂无简介</span>
     </div>
     <div class="ke_bottom">
         <h4>课程资源</h4>
     </div>
     <div class="ke_content2">
-        <span>......</span>
+        <span>{{ u[6] }}</span>
     </div>
 </div>
 </body>
