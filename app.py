@@ -1,15 +1,70 @@
 from flask import Flask, render_template, request, flash
 
 import pymysql
-
+import mydb
 app = Flask(__name__)
 
 # 用户安全问题，设置key值，值随意给出，给的难道越大，破解与麻烦
-
 app.secret_key = "123344"
+
+@app.route('/docourse1',methods=["POST"])
+def course1():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=1")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information.html' , u=result)
+@app.route('/docourse2',methods=["POST"])
+def course2():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=2")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information.html' , u=result)
+@app.route('/docourse3',methods=["POST"])
+def course3():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=3")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information.html' , u=result)
 
 
 # 接收前端注册界面提交的数据
+
 
 @app.route("/doUser", methods=["POST"])
 def doUser():
@@ -67,11 +122,17 @@ def doUser():
 
             return render_template("login.html")
 
+
+
         else:
 
             flash("用户已存在")
 
             return render_template("register.html")
+
+
+
+
 
 
 
@@ -84,10 +145,22 @@ def doUser():
 
 # 显示登录界面
 
+
 @app.route("/showLogin")
 def showloign():
     return render_template("login.html")
 
+@app.route("/showindex")
+def showindex():
+    return render_template("index.html")
+
+@app.route("/showcourselist")
+def showcourselist():
+    return render_template("courselist.html")
+
+@app.route("/showmycourse")
+def showmycourse():
+    return render_template("mycourse.html")
 
 @app.route("/doregist")
 def doregist():
@@ -100,6 +173,7 @@ def dofindpwd():
 
 
 # 检测登录是否成功
+
 
 @app.route("/doLogin", methods=["POST"])
 def doLogin():
@@ -145,6 +219,8 @@ def doLogin():
 
         return render_template("register.html")
 
+
+
     else:
 
         cls.execute("select * from myuser where uname=%s and upwd=%s", [name, pwd])
@@ -158,6 +234,8 @@ def doLogin():
             flash("user or password  not  true")
 
             return render_template("login.html")
+
+
 
         else:
 
@@ -214,6 +292,8 @@ def findpwd():
 
         return render_template("register.html")
 
+
+
     else:
 
         return render_template("resetpwd.html")
@@ -257,6 +337,8 @@ def resetpwd():
 
         return render_template("register.html")
 
+
+
     else:
 
         if pwd1 == pwd2:
@@ -271,18 +353,24 @@ def resetpwd():
 
             return render_template("login.html")
 
+
+
         else:
 
             flash("输入密码不一致")
 
             return render_template("resetpwd.html")
-        
-#查询用户名是否存在
+
+
+# 查询用户名是否存在
+
 @app.route("/checkUName")
 def checkUName():
     name = request.args.get("name")
+
     print(name)
-    return  mydb.selectName(name)
+
+    return mydb.selectName(name)
 
 
 if __name__ == '__main__':
