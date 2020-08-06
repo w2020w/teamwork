@@ -1,12 +1,20 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
 <title>zhuyee</title>
+
 <style>
 * {
+
    box-sizing:border-box
+
 }
+
 body {
 
   font-family: Arial;
@@ -16,7 +24,9 @@ body {
   background: white;
 
 }
+
 /* 头部标题 */
+
 .header {
 
   padding: 30px;
@@ -267,11 +277,11 @@ body{
 
 <div class="topnav">
 
-  <a href="index.html">首页</a>
+  <a href="{{ url_for('showindex') }}">首页</a>
 
-  <a href="courselist.html">课程列表</a>
+  <a href="{{ url_for('showcourselist') }}">课程列表</a>
 
-  <a href="mycourse.html">我的课程</a>
+  <a href="{{ url_for('showmycourse') }}">我的课程</a>
 
   <!--<a href="#" style="float:right">链接</a>-->
 
@@ -365,7 +375,7 @@ body{
     <table width="100%">
         <tr align="center">
             <td>
-                <a href="#">
+                <a href="{{ url_for('showcourselist') }}">
                     <img src="../static/beida.png" width="150px"/>
                 </a><br>
                 <p>北京大学</p>
