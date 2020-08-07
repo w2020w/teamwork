@@ -1,0 +1,57 @@
+
+@app.route("/ajax",methods=['get','post'])
+def get_ajax():
+    coursename = request.values.get("coursename")
+    coursename1=list(coursename)
+    coursename2 = coursename1[3]
+#    print(coursename2)
+    print("%s"%(coursename2))
+    name=getpass.getuser()
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+    print(conn)
+    cls = conn.cursor()
+    cls.execute("select mycourse1 from myuser where uname=%s", [name])
+    result = cls.fetchone()
+    if result is None:
+
+        rows = cls.execute("update myuser set mycourse1 =%s where uname=%s", [coursename2, name])
+        conn.commit()
+        flash("加入成功")
+
+    else:
+        cls.execute("select mycourse2 from myuser where uname=%s", [name])
+        result = cls.fetchone()
+        if result is None:
+            rows = cls.execute("update myuser set mycourse2 =%s where uname=%s", [coursename2, name])
+            conn.commit()
+            flash("加入成功")
+        else:
+            cls.execute("select mycourse3 from myuser where uname=%s", [name])
+            result = cls.fetchone()
+            if result is None:
+                rows = cls.execute("update myuser set mycourse3 =%s where uname=%s", [coursename2, name])
+                conn.commit()
+                flash("加入成功")
+            else:
+                cls.execute("select mycourse4 from myuser where uname=%s", [name])
+                result = cls.fetchone()
+                if result is None:
+                    rows = cls.execute("update myuser set mycourse4 =%s where uname=%s", [coursename2, name])
+                    conn.commit()
+                    flash("加入成功")
+                else:
+                    cls.execute("select mycourse5 from myuser where uname=%s", [name])
+                    result = cls.fetchone()
+                    if result is None:
+                        rows = cls.execute("update myuser set mycourse5 =%s where uname=%s", [coursename2, name])
+                        conn.commit()
+                        flash("加入成功")
+                    else:
+                        flash("我的课程已满")
