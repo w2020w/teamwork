@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程列表</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: gainsboro;
+            color: black;
+        }
+        .wrap{
+            width: 600px;
+            margin: 0px auto;
+        }
+        .menu{
+            width: 600px;
+            height: 30px;
+            background: cornflowerblue;
+            position: sticky;
+            top:0px;
+        }
+        .menu ul li{
+            float: left;
+            list-style-type: none;
+            padding: 0 40px;
+        }
+        .content ul li img:hover{
+            transform: scale(1.2);/*当鼠标移动到图片上时实现放大功能*/
+        }
+        .content ul li{
+            height: 100px;
+            overflow: hidden;
+            border-bottom: 1px solid lavender;
+            background: white;
+            list-style-type: none;
+            transition-duration: 0.5s;
+            margin: 10px 10px 5px 0;
+        }
+        .content ul li:hover{
+            background-color: lavender;
+            transition-duration: 0.5s;
+        }
+        .content .left{
+            overflow: hidden;
+            transition-duration: 0.5s;
+            width: 140px;
+            height:80px;
+            /*background: green;*/
+            float: left;
+            margin-right:20px;
+        }
+        .content .right{
+            width:400px ;
+            float: left;
+            /*background: pink;*/
+        }
+        .right_top{
+            height:60px;
+        }
+        .right_bottom{
+            margin_top:50px;
+        }
+        .right_bottom_left span{
+            color: darkgray;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="menu">
+        <ul>
+            <li>南昌大学</li>
+        </ul>
+    </div>
+<div class="topnav">
+    <a href="{{ url_for('showindex') }}">返回</a>
+    <a href="{{ url_for('showmycourse') }}">我的课程</a>
+    <a href="#">链接</a>
+    <div style="text-align: right; background-color: white"><br>
+          <input type="text" name="search" style="width: 300px; height: 25px; border: 1px solid gray; outline: none; border-radius: 2px;"
+          placeholder="请输入课程名称" />
+          <button type="submit" name="research" style="background-color: lightgrey;width: 50px"/>搜索</button>
+        </div><br>
+</div>
+    <div class="content">
+        <ul>
+
+            <li>
+                <form action="icourse1" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/6bceb775f751c6a6713be3aee3488288.png" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >女生穿搭技巧</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </li>
+
+            <li>
+                <form action="icourse2" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/eb04fe1ae8cc546ca007275c606643a9.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >传染病学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </li>
+
+            <li>
+                <form action="icourse3" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/529e35c9a6fd71141de534157cead8e6.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >共享经济</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </li>
+
+            <li>
+                <form action="icourse4" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/193_114c/f511acfe353258bdeb9e089f85e3a723.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >现代汉语言语交际</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="icourse5" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/53c5e4e4a310a822ad8b29e3.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >食品营养学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="icourse6" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/54613f3bd9b2755d3f1099cbff92953c.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >知识产权法</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="icourse7" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/193_114c/5dd1d9f1b9b30d7ff806e9420d56829f.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >医学分子生物学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="icourse8" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/1fabc5f41960813356dfa9096de84137.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >大学化学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="icourse9" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/2bf1857e738464978c7e0ded96a4c174.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >人体解剖学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="icourse10" method="post">
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/a7d34fff1bd038cde8cb037bd8f4edbc.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >现场生命急救知识与技能</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>南昌大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
