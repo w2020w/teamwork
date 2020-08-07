@@ -6,7 +6,7 @@
 
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 
-<title>zhuyee</title>
+<title>首页</title>
 
 <style>
 * {
@@ -279,7 +279,7 @@ body{
 
   <a href="{{ url_for('showindex') }}">首页</a>
 
-  <a href="{{ url_for('showcourselist') }}">课程列表</a>
+  <a href="{{ url_for('showcourselist1') }}">课程列表</a>
 
   <a href="{{ url_for('showmycourse') }}">我的课程</a>
 
@@ -375,35 +375,36 @@ body{
     <table width="100%">
         <tr align="center">
             <td>
-                <a href="{{ url_for('showcourselist') }}">
+                <a href="{{ url_for('showcourselist1') }}">
                     <img src="../static/beida.png" width="150px"/>
                 </a><br>
                 <p>北京大学</p>
             </td>
             <td>
-                <a href="#">
-                    <img src="../static/hagong.jpg" width="150px"/>
+                <a href="{{ url_for('showcourselist2') }}">
+                    <img src="../static/chuanda.jpg" width="150px"/>
                 </a><br>
-                <p>哈尔滨工业大学</p>
+                <p>四川大学</p>
             </td>
             <td>
-                <a href="#">
-                    <img src="../static/xijiao.jpg" width="150px"/>
+                <a href="{{ url_for('showcourselist3') }}">
+                    <img src="../static/nanchang.jpg" width="150px"/>
                 </a><br>
-                <p>西安交通大学</p>
+                <p>南昌大学</p>
             </td>
             <td>
-                <a href="#">
-                    <img src="../static/zhongchuan.jpg" width="150px"/>
+                <a href="{{ url_for('showcourselist1') }}">
+                    <img src="../static/zhongnan.jpg" width="150px"/>
                 </a><br>
-                <p>中国传媒大学</p>
+                <p>中南大学</p>
             </td>
             <td>
-                <a href="#">
-                    <img src="../static/beishi.jpg" width="150px"/>
+                <a href="{{ url_for('showcourselist1') }}">
+                    <img src="../static/fudan.jpg" width="150px"/>
                 </a><br>
-                <p>北京师范大学</p>
+                <p>复旦大学</p>
             </td>
+
         </tr>
     </table>
 </div>
