@@ -90,6 +90,7 @@
 
         }
     </style>
+    <script src="../static/jquery.min.js"></script>
 </head>
 <body>
 <div class="topnav" >
@@ -108,17 +109,45 @@
                 <div class="left"><img src="../static/tupian.jpg" alt=""></div>
                 <div class="right">
                     <div class="right_top">
-                        <h3>{{ u[2] }}</h3>
+                        <h3 id="coursename">{{ u[3] }}</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>{{ u[1] }}</span>  <span>课时数：xx</span>  <span>讲师:{{ u[3] }}</span>
+                            <span>学校：{{ u[1] }}  </span>      <span>  讲师: {{ u[4] }}</span>
                         </div>
-                        <div class="middle"
+                        <div class="middle">
                         <span>参课人数：</span>
                         </div>
-                        <button type="submit">加入课程</button>
+                        <button type="submit" id="btn" >加入课程</button>
+                        <script type="text/javascript">
+                            $(
+                                $("#btn").click(function () {
+                                    alert("hello")
+                                    coursename = $("#coursename").val()
+                                    $.ajax({
+                                        url:"/ajax",
+                                        type:"post",
+                                        data:{
+                                        "coursename": coursename
+                                    }
+                                ,
+                                    success:function (datas) {
+                                        console.log("成功了")
+                                        console.log(datas)
+
+                                    }
+                                ,
+                                    error:function () {
+                                        console.log("失败了")
+
+                                    }
+                                })
+
+                                })
+                            )
+                        </script>
                     </div>
+                </div>
             </li>
         </ul>
 </div>
@@ -134,7 +163,7 @@
         <h4>课程资源</h4>
     </div>
     <div class="ke_content2">
-        <span>{{ u[6] }}</span>
+        <span>{{ u[7] }}</span>
     </div>
 </div>
 </body>
