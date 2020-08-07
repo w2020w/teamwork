@@ -96,7 +96,7 @@
     <div style="text-align: right; background-color: white"><br>
           <input type="text" name="search" style="width: 300px; height: 25px; border: 1px solid gray; outline: none; border-radius: 2px;"
           placeholder="请输入课程名称" />
-          <button type="submit"  name="research"/>搜索</button>
+          <button type="submit" name="research" style="background-color: lightgrey;width: 50px"/>搜索</button>
         </div><br>
 </div>
     <div class="content">
@@ -104,7 +104,7 @@
 
             <li>
                 <form action="docourse1" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/1.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >高等代数</h3>
@@ -112,7 +112,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
 
             <li>
                 <form action="docourse2" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/2.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >数理统计</h3>
@@ -129,7 +129,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
 
             <li>
                 <form action="docourse3" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/3.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >几何学及其习题</h3>
@@ -146,7 +146,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
 
             <li>
                 <form action="docourse4" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/4.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >数学分析</h3>
@@ -163,7 +163,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
 
             <li>
                 <form action="docourse5" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/5.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >概率论</h3>
@@ -180,7 +180,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
 
             <li>
                 <form action="docourse6" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/6.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >电磁学</h3>
@@ -197,7 +197,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
 
             <li>
                 <form action="docourse7" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/7.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大气探测学</h3>
@@ -214,7 +214,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
 
             <li>
                 <form action="docourse8" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/8.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >数学物理方法</h3>
@@ -231,7 +231,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -240,7 +240,7 @@
 
             <li>
                 <form action="docourse9" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/9.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >光学</h3>
@@ -248,7 +248,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
 
             <li>
                 <form action="docourse10" method="post">
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+                <div class="left"><img src="../static/beida/10.JPG" alt=""></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >核物理与粒子物理导论</h3>
@@ -265,7 +265,7 @@
                     <div class="right_bottom">
                         <div class="right_bottom_left">
                             <span>北京大学</span>
-                            <button type="submit">进入</button>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
                         </div>
                     </div>
                 </div>
