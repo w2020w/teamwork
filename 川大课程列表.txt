@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程列表</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: gainsboro;
+            color: black;
+        }
+        .wrap{
+            width: 600px;
+            margin: 0px auto;
+        }
+        .menu{
+            width: 600px;
+            height: 30px;
+            background: cornflowerblue;
+            position: sticky;
+            top:0px;
+        }
+        .menu ul li{
+            float: left;
+            list-style-type: none;
+            padding: 0 40px;
+        }
+        .content ul li img:hover{
+            transform: scale(1.2);/*当鼠标移动到图片上时实现放大功能*/
+        }
+        .content ul li{
+            height: 100px;
+            overflow: hidden;
+            border-bottom: 1px solid lavender;
+            background: white;
+            list-style-type: none;
+            transition-duration: 0.5s;
+            margin: 10px 10px 5px 0;
+        }
+        .content ul li:hover{
+            background-color: lavender;
+            transition-duration: 0.5s;
+        }
+        .content .left{
+            overflow: hidden;
+            transition-duration: 0.5s;
+            width: 140px;
+            height:80px;
+            /*background: green;*/
+            float: left;
+            margin-right:20px;
+        }
+        .content .right{
+            width:400px ;
+            float: left;
+            /*background: pink;*/
+        }
+        .right_top{
+            height:60px;
+        }
+        .right_bottom{
+            margin_top:50px;
+        }
+        .right_bottom_left span{
+            color: darkgray;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="menu">
+        <ul>
+            <li>四川大学</li>
+        </ul>
+    </div>
+<div class="topnav">
+    <a href="{{ url_for('showindex') }}">返回</a>
+    <a href="{{ url_for('showmycourse') }}">我的课程</a>
+    <a href="#">链接</a>
+    <div style="text-align: right; background-color: white"><br>
+          <input type="text" name="search" style="width: 300px; height: 25px; border: 1px solid gray; outline: none; border-radius: 2px;"
+          placeholder="请输入课程名称" />
+          <button type="submit" name="research" style="background-color: lightgrey;width: 50px"/>搜索</button>
+        </div><br>
+</div>
+    <div class="content">
+        <ul>
+
+            <li>
+                <form action="ucourse1" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/6be2e3df-9202-4f8c-8f07-16d6d66aa6b5.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >大学化学实...</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </li>
+
+            <li>
+                <form action="ucourse2" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/2f1fb8c8-57e0-4905-8707-669e04075535.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >内科学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </li>
+
+            <li>
+                <form action="ucourse3" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/86088861-dbc1-4018-980a-6c2aa111414c.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >大学物理实验</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </li>
+
+            <li>
+                <form action="ucourse4" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/a7e9e12b-ffdd-4eee-8ac1-c6b4f156dd8e.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >药物化学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="ucourse5" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7dacc808-2e63-4f16-8f16-716816f34696.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >病理学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="ucourse6" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/c497046a-0779-495c-9463-b13c8a4ebf9d.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >法医物证学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="ucourse7" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7007d021-73ae-4877-88dc-00d576bf506d.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >机械原理</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="ucourse8" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/e25e936e-df0d-4373-839f-6b8d60568fb3.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >马克思主义...</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="ucourse9" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7aba3c41-8353-4582-81f0-9877e34f3b58.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >光信息处理</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+            <li>
+                <form action="ucourse10" method="post">
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/b0e64af5-7807-442e-9d2e-5b70c25e827d.jpg" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 >水力学</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>四川大学</span>
+                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
