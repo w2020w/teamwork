@@ -393,13 +393,13 @@ body{
                 <p>南昌大学</p>
             </td>
             <td>
-                <a href="{{ url_for('showcourselist1') }}">
+                <a href="{{ url_for('showcourselist4') }}">
                     <img src="../static/zhongnan.jpg" width="150px"/>
                 </a><br>
                 <p>中南大学</p>
             </td>
             <td>
-                <a href="{{ url_for('showcourselist1') }}">
+                <a href="{{ url_for('showcourselist5') }}">
                     <img src="../static/fudan.jpg" width="150px"/>
                 </a><br>
                 <p>复旦大学</p>
