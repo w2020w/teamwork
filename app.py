@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash
 
 import pymysql
+import getpass
 import mydb
 app = Flask(__name__)
 
@@ -188,6 +189,732 @@ def course10():
     print(result)
     return render_template('course_information.html' , u=result)
 
+@app.route('/ucourse1',methods=["POST"])
+def ucourse1():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=265")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse2',methods=["POST"])
+def ucourse2():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=266")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse4',methods=["POST"])
+def ucourse3():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=267")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse4',methods=["POST"])
+def ucourse4():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=268")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse5',methods=["POST"])
+def ucours5():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=269")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse6',methods=["POST"])
+def ucourse6():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=270")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse7',methods=["POST"])
+def ucourse7():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=271")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse8',methods=["POST"])
+def ucourse8():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=272")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse9',methods=["POST"])
+def ucourse9():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=273")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/ucourse10',methods=["POST"])
+def ucourse10():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=274")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+
+@app.route('/icourse1',methods=["POST"])
+def icourse1():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=436")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse2',methods=["POST"])
+def icourse2():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=437")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse3',methods=["POST"])
+def icourse3():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=438")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse4',methods=["POST"])
+def icourse4():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=439")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse5',methods=["POST"])
+def icourse5():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=440")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse6',methods=["POST"])
+def icourse6():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=441")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse7',methods=["POST"])
+def icourse7():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=442")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse8',methods=["POST"])
+def icourse8():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=443")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse9',methods=["POST"])
+def icourse9():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=444")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+@app.route('/icourse10',methods=["POST"])
+def icourse10():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=445")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information2.html' , u=result)
+
+@app.route('/zcourse1',methods=["POST"])
+def zcourse1():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=596")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse2',methods=["POST"])
+def zcourse2():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=597")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse3',methods=["POST"])
+def zcourse3():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=598")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse4',methods=["POST"])
+def zcourse4():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=599")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse5',methods=["POST"])
+def zcourse5():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=600")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse6',methods=["POST"])
+def zcourse6():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=601")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse7',methods=["POST"])
+def zcourse7():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=602")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse8',methods=["POST"])
+def zcourse8():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=603")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse9',methods=["POST"])
+def zcourse9():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=604")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/zcourse10',methods=["POST"])
+def zcourse10():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=605")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+
+@app.route('/fcourse1',methods=["POST"])
+def fcourse1():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=628")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse2',methods=["POST"])
+def fcourse2():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=629")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse3',methods=["POST"])
+def fcourse3():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=630")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse4',methods=["POST"])
+def fcourse4():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=631")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse5',methods=["POST"])
+def fcourse5():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=632")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse6',methods=["POST"])
+def fcourse6():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=633")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse7',methods=["POST"])
+def fcourse7():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=634")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse8',methods=["POST"])
+def fcourse8():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=635")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse9',methods=["POST"])
+def fcourse9():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=636")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+@app.route('/fcourse10',methods=["POST"])
+def fcourse10():
+
+    conn = pymysql.connect(
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+        port=3307,
+        user="root",
+        password="123456",
+        db="mython",
+        charset="utf8"
+    )
+
+    cls = conn.cursor()
+    cls.execute("select * from course where id=637")
+    result = cls.fetchone()
+    conn.close()
+    print(result)
+    return render_template('course_information4.html' , u=result)
+
+
+
 
 # 接收前端注册界面提交的数据
 
@@ -213,7 +940,7 @@ def doUser():
 
             host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
 
-            port=3306,
+            port=3307,
 
             user="root",
 
@@ -282,18 +1009,23 @@ def showindex():
 @app.route("/showcourselist1")
 def showcourselist1():
     return render_template("courselist1.html")
+
 @app.route("/showcourselist2")
 def showcourselist2():
     return render_template("courselist2.html")
+
 @app.route("/showcourselist3")
 def showcourselist3():
     return render_template("courselist3.html")
+
 @app.route("/showcourselist4")
 def showcourselist4():
     return render_template("courselist4.html")
+
 @app.route("/showcourselist5")
-def showcourselist1():
+def showcourselist5():
     return render_template("courselist5.html")
+
 
 @app.route("/doregist")
 def doregist():
@@ -324,7 +1056,7 @@ def doLogin():
 
         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
 
-        port=3306,
+        port=3307,
 
         user="root",
 
@@ -397,7 +1129,7 @@ def findpwd():
 
         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
 
-        port=3306,
+        port=3307,
 
         user="root",
 
@@ -444,7 +1176,7 @@ def resetpwd():
 
         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
 
-        port=3306,
+        port=3307,
 
         user="root",
 
@@ -525,18 +1257,119 @@ def showmycourse():
     return render_template('mycourse.html', m=result)
 
 
-
-
-
-
-
 @app.route("/ajax",methods=['get','post'])
+
 def get_ajax():
+
     coursename = request.values.get("coursename")
-    coursename1 = coursename[1:4]
-    print(coursename1)
-    print("%s"%(coursename))
-    return 'successful'
+
+    coursename1=list(coursename)
+
+    coursename2 = coursename1[3]
+
+#    print(coursename2)
+
+    print("%s"%(coursename2))
+
+    name=getpass.getuser()
+
+    print(name)
+
+    conn = pymysql.connect(
+
+        host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
+
+        port=3307,
+
+        user="root",
+
+        password="123456",
+
+        db="mython",
+
+        charset="utf8"
+
+    )
+
+    print(conn)
+
+    cls = conn.cursor()
+
+    cls.execute("select mycourse1 from myuser where uname=%s", [name])
+
+    result = cls.fetchone()
+
+    if result is None:
+
+
+
+        rows = cls.execute("update myuser set mycourse1 =%s where uname=%s", [coursename2, name])
+
+        conn.commit()
+
+        flash("加入成功")
+
+
+
+    else:
+
+        cls.execute("select mycourse2 from myuser where uname=%s", [name])
+
+        result = cls.fetchone()
+
+        if result is None:
+
+            rows = cls.execute("update myuser set mycourse2 =%s where uname=%s", [coursename2, name])
+
+            conn.commit()
+
+            flash("加入成功")
+
+        else:
+
+            cls.execute("select mycourse3 from myuser where uname=%s", [name])
+
+            result = cls.fetchone()
+
+            if result is None:
+
+                rows = cls.execute("update myuser set mycourse3 =%s where uname=%s", [coursename2, name])
+
+                conn.commit()
+
+                flash("加入成功")
+
+            else:
+
+                cls.execute("select mycourse4 from myuser where uname=%s", [name])
+
+                result = cls.fetchone()
+
+                if result is None:
+
+                    rows = cls.execute("update myuser set mycourse4 =%s where uname=%s", [coursename2, name])
+
+                    conn.commit()
+
+                    flash("加入成功")
+
+                else:
+
+                    cls.execute("select mycourse5 from myuser where uname=%s", [name])
+
+                    result = cls.fetchone()
+
+                    if result is None:
+
+                        rows = cls.execute("update myuser set mycourse5 =%s where uname=%s", [coursename2, name])
+
+                        conn.commit()
+
+                        flash("加入成功")
+
+                    else:
+
+                        flash("我的课程已满")
 
 if __name__ == '__main__':
     app.run()  # 启动服务器
