@@ -282,14 +282,18 @@ def showindex():
 @app.route("/showcourselist1")
 def showcourselist1():
     return render_template("courselist1.html")
-
 @app.route("/showcourselist2")
 def showcourselist2():
     return render_template("courselist2.html")
-
 @app.route("/showcourselist3")
 def showcourselist3():
     return render_template("courselist3.html")
+@app.route("/showcourselist4")
+def showcourselist4():
+    return render_template("courselist4.html")
+@app.route("/showcourselist5")
+def showcourselist1():
+    return render_template("courselist5.html")
 
 @app.route("/doregist")
 def doregist():
