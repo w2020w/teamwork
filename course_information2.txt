@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程信息</title>
+    <style type="text/css">
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: cornflowerblue;
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+    background-color: gainsboro;
+  color: black;
+}
+
+
+
+
+        .content ul li{
+            height: 230px;
+            overflow: hidden;
+            border-bottom: 1px solid lavender;
+            background: white;
+            list-style-type: none;
+            transition-duration: 0.5s;
+            margin: 10px 10px 5px 0;
+        }
+
+        .content .left{
+            overflow: hidden;
+            transition-duration: 0.5s;
+            padding-left: 200px;
+            width: 300px;
+            height:200px;
+            /*background: green;*/
+            float: left;
+            margin-right:150px;
+            margin-top: 15px;
+        }
+        .content .right{
+            width:400px ;
+            float: left;
+            /*background: pink;*/
+        }
+        .right_top{
+            height:60px;
+        }
+        .right_bottom{
+            margin_top:50px;
+        }
+        .right_bottom_left span{
+
+            font-size: 15px;
+        }
+        .middle{
+            margin-top: 15px;
+        }
+
+             button{
+            width: 150px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 40px;
+            box-sizing: content-box;
+            border-radius: 10px;
+            background-color: rgba(75, 180, 79, 0.81);
+        }
+
+        .ke{
+            margin-left: 200px;
+        }
+        .ke_content{
+            height: 70px;
+        }
+
+        .sousuo{
+
+        }
+    </style>
+    <script src="../static/jquery.min.js"></script>
+</head>
+<body>
+<div class="topnav" >
+  <a href={{ url_for('showindex') }}>首页</a>
+  <a href={{ url_for('showmycourse') }}>我的课程</a>
+  <!--<a href="#" style="float:right">链接</a>-->
+
+</div>
+
+
+<div class="content">
+        <ul>
+            <li>
+
+                <div class="left"><img src="{{ u[8] }}" alt=""></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h3 id="coursename">{{ u[3] }}</h3>
+                    </div>
+                    <div class="right_bottom">
+                        <div class="right_bottom_left">
+                            <span>学校：{{ u[1] }}  </span>      <span>  讲师: {{ u[4] }}</span>
+                        </div>
+                        <div class="middle">
+                        <span>参课人数：{{ u[5] }}</span>
+                        </div>
+                        <button type="submit" id="btn" >加入课程</button>
+                        <script type="text/javascript">
+                            $(
+                                $("#btn").click(function () {
+                                    alert("hello")
+                                    coursename = $("#coursename").val()
+                                    $.ajax({
+                                        url:"/ajax",
+                                        type:"post",
+                                        data:{
+                                        "coursename": coursename
+                                    }
+                                ,
+                                    success:function (datas) {
+                                        console.log("成功了")
+                                        console.log(datas)
+
+                                    }
+                                ,
+                                    error:function () {
+                                        console.log("失败了")
+
+                                    }
+                                })
+
+                                })
+                            )
+                        </script>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</div>
+
+<div class="ke">
+    <div class="ke_top">
+        <h4>课程简介</h4>
+    </div>
+    <div class="ke_content">
+        <span>暂无简介</span>
+    </div>
+    <div class="ke_bottom">
+        <h4>课程资源</h4>
+    </div>
+    <div class="ke_content2">
+        <span>{{ u[7] }}</span>
+    </div>
+</div>
+</body>
+</html>
