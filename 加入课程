@@ -1,13 +1,14 @@
 import getpass
 @app.route("/ajax",methods=['get','post'])
 def get_ajax():
+
     coursename = request.values.get("coursename")
-    coursename1=list(coursename)
-    coursename2 = coursename1[3]
-#    print(coursename2)
-    print("%s"%(coursename2))
-    name=getpass.getuser()
-    print(name)
+
+    print("%s" % (coursename))
+
+ #   return 'successful'
+
+#    name=getpass.getuser()
     conn = pymysql.connect(
         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
         port=3307,
@@ -18,41 +19,51 @@ def get_ajax():
     )
     print(conn)
     cls = conn.cursor()
-    cls.execute("select mycourse1 from myuser where uname=%s", [name])
+    cls.execute("select mycourse1 from myuser where uid=%s", [3])
     result = cls.fetchone()
-    if result is None:
+    print(result)
+    result1=result[0]
+    print(result1)
+    if result1 is None:
 
-        rows = cls.execute("update myuser set mycourse1 =%s where uname=%s", [coursename2, name])
+        rows = cls.execute("update myuser set mycourse1 =%s where uid=%s", [coursename1, 3])
         conn.commit()
+
         flash("加入成功")
 
     else:
-        cls.execute("select mycourse2 from myuser where uname=%s", [name])
+        cls.execute("select mycourse2 from myuser where uid=%s", [3])
         result = cls.fetchone()
-        if result is None:
-            rows = cls.execute("update myuser set mycourse2 =%s where uname=%s", [coursename2, name])
+        result1 = result[0]
+        if result1 is None:
+            rows = cls.execute("update myuser set mycourse2 =%s where uid=%s", [coursename1, 3])
             conn.commit()
             flash("加入成功")
         else:
-            cls.execute("select mycourse3 from myuser where uname=%s", [name])
+            cls.execute("select mycourse3 from myuser where uid=%s", [3])
             result = cls.fetchone()
-            if result is None:
-                rows = cls.execute("update myuser set mycourse3 =%s where uname=%s", [coursename2, name])
+            result1 = result[0]
+            if result1 is None:
+                rows = cls.execute("update myuser set mycourse3 =%s where uid=%s", [coursename1, 3])
                 conn.commit()
                 flash("加入成功")
             else:
-                cls.execute("select mycourse4 from myuser where uname=%s", [name])
+                cls.execute("select mycourse4 from myuser where uid=%s", [3])
                 result = cls.fetchone()
-                if result is None:
-                    rows = cls.execute("update myuser set mycourse4 =%s where uname=%s", [coursename2, name])
+                result1 = result[0]
+                if result1 is None:
+                    rows = cls.execute("update myuser set mycourse4 =%s where uid=%s", [coursename1, 3])
                     conn.commit()
                     flash("加入成功")
                 else:
-                    cls.execute("select mycourse5 from myuser where uname=%s", [name])
+                    cls.execute("select mycourse5 from myuser where uid=%s", [3])
                     result = cls.fetchone()
-                    if result is None:
-                        rows = cls.execute("update myuser set mycourse5 =%s where uname=%s", [coursename2, name])
+                    result1 = result[0]
+                    if result1 is None:
+                        rows = cls.execute("update myuser set mycourse5 =%s where uid=%s", [coursename1, 3])
                         conn.commit()
                         flash("加入成功")
                     else:
                         flash("我的课程已满")
+
+         
