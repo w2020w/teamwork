@@ -1,4 +1,4 @@
-
+import getpass
 @app.route("/ajax",methods=['get','post'])
 def get_ajax():
     coursename = request.values.get("coursename")
@@ -7,6 +7,7 @@ def get_ajax():
 #    print(coursename2)
     print("%s"%(coursename2))
     name=getpass.getuser()
+    print(name)
     conn = pymysql.connect(
         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
         port=3307,
