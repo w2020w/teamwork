@@ -50,7 +50,6 @@ body {
 
   overflow: hidden;
 
-  background-color: white;
 
 }
 
@@ -113,8 +112,9 @@ body{
 .slideshow-container {
 
     position: relative;
-
-  margin: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+  {#margin: auto;#}
 
 }
 /* 下一张 & 上一张 按钮 */
@@ -252,7 +252,6 @@ body{
   to {opacity: 1}
 
 }
-
 </style>
 
     <script src="../static/jquery.min.js"></script>
@@ -300,20 +299,20 @@ body{
 <div class="slideshow-container">
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../static/te.jpg" style="width:100%" height="400px" >
-    <div class="text">文本 1</div>
+    <img src="../static/page1.jpg" style="width:100%" height="400px" >
+    <div class="text"></div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="../static/te.jpg" style="width:100%" height="400px">
-    <div class="text">文本 2</div>
+    <img src="../static/page2.jpg" style="width:100%" height="400px">
+    <div class="text"></div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="../static/te.jpg" style="width:100%" height="400px">
-    <div class="text">文本 3</div>
+    <img src="../static/page3.jpg" style="width:100%" height="400px">
+    <div class="text"></div>
   </div>
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
@@ -406,10 +405,26 @@ body{
             </td>
 
         </tr>
+
+         <tr align="center">
+            <td>
+                <a href="{{ url_for('showcourselist6') }}">
+                    <img src="../static/guofang.jpg" width="150px"/>
+                </a><br>
+                <p>国防科技大学</p>
+            </td>
+            <td>
+                <a href="{{ url_for('showcourselist7') }}">
+                    <img src="../static/nankai.jpg" width="150px"/>
+                </a><br>
+                <p>南开大学</p>
+            </td>
+
+        </tr>
     </table>
 </div>
 <div class="footer">
-  <p>底部区域</p>
+  <p>大学生公共资源管理平台</p>
 </div>
 </div>
 </body>
