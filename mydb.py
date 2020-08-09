@@ -2,7 +2,7 @@ import  pymysql
 def selectName(uname):
     conn = pymysql.connect(
         host="wtwhz.chinanorth.cloudapp.chinacloudapi.cn",
-        port=3306,
+        port=3307,
         user="root",
         password="123456",
         db="mython",
