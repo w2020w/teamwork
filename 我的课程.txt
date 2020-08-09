@@ -1,199 +1,355 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <title>我的课程</title>
+
     <style type="text/css">
+
         *{
+
             margin: 0;
+
             padding:0;
+
         }
+
+
 
         .topnav {
+
             overflow: hidden;
+
             background-color: white;
+
         }
+
+
 
         .topnav a {
+
             float: left;
+
             display: block;
+
             color: black;
+
             text-align: center;
+
             padding: 14px 16px;
+
             text-decoration: none;
+
         }
+
+
 
         .topnav a:hover {
+
             background-color: gainsboro;
+
             color: black;
+
         }
+
         .wrap{
+
             width: 600px;
+
             margin: 0px auto;
+
         }
+
         .menu{
+
             width: 600px;
+
             height: 30px;
+
             background: cornflowerblue;
+
             position: sticky;
+
             top:0px;
+
         }
+
         .menu ul li{
+
             float: left;
+
             list-style-type: none;
+
             padding: 0 40px;
+
         }
+
         .content ul li img:hover{
+
             transform: scale(1.2);/*当鼠标移动到图片上时实现放大功能*/
+
         }
+
         .content ul li{
+
             height: 100px;
+
             overflow: hidden;
+
             border-bottom: 1px solid lavender;
+
             background: white;
+
             list-style-type: none;
+
             transition-duration: 0.5s;
+
             margin: 10px 10px 5px 0;
 
+
+
         }
+
         .content ul li:hover{
+
             background-color: lavender;
+
             transition-duration: 0.5s;
+
         }
+
         .content .left{
+
             overflow: hidden;
+
             transition-duration: 0.5s;
+
             width: 140px;
+
             height:80px;
+
             /*background: green;*/
+
             float: left;
+
             margin-right:20px;
+
         }
+
         .content .right{
+
             width:400px ;
+
             float: left;
+
             /*background: pink;*/
+
         }
+
         .right_top{
+
             height:60px;
+
         }
+
         .right_bottom{
+
             margin_top:50px;
+
         }
+
         .right_bottom_left span{
+
             color: darkgray;
+
             font-size: 12px;
+
         }
+
     </style>
+
 </head>
+
 <body>
+
 <div class="wrap">
+
     <div class="menu">
+
         <ul>
+
             <li>我的课程</li>
+
         </ul>
+
     </div>
+
+
 
 <div class="topnav">
-    <a href="index.html">返回</a>
-    <a href="list.html">添加课程</a>
-    <a href="#">链接</a>
+
+    <a href="{{ url_for('showindex') }}">返回</a>
+
+    <a href="{{ url_for('showindex') }}">添加课程</a>
+
     <div style="text-align: right; background-color: white"><br>
+
           <input type="text" name="search" style="width: 300px; height: 25px; border: 1px solid gray; outline: none; border-radius: 2px;"
+
           placeholder="请输入课程名称" />
+
           <button type="submit"  name="research"/>搜索</button>
+
         </div><br>
+
 </div>
 
+
+
     <div class="content">
+
         <ul>
-            <li>
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
-                <div class="right">
-                    <div class="right_top">
-                        <h3>课程名称</h3>
-                    </div>
-                    <div class="right_bottom">
-                        <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
 
             <li>
+
                 <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+
                 <div class="right">
+
                     <div class="right_top">
-                        <h3>课程名称</h3>
+
+                        <h3>{{ m[4] }}</h3>
+
                     </div>
+
                     <div class="right_bottom">
+
                         <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
+
+
                         </div>
+
                     </div>
+
                 </div>
+
             </li>
 
-            <li>
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
-                <div class="right">
-                    <div class="right_top">
-                        <h3>课程名称</h3>
-                    </div>
-                    <div class="right_bottom">
-                        <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
+
 
             <li>
+
                 <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+
                 <div class="right">
+
                     <div class="right_top">
-                        <h3>课程名称</h3>
+
+                        <h3>{{ m[5] }}</h3>
+
                     </div>
+
                     <div class="right_bottom">
+
                         <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </li>
 
-            <li>
-                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
-                <div class="right">
-                    <div class="right_top">
-                        <h3>课程名称</h3>
-                    </div>
-                    <div class="right_bottom">
-                        <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
+
 
             <li>
+
                 <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+
                 <div class="right">
+
                     <div class="right_top">
-                        <h3>课程名称</h3>
+
+                        <h3>{{ m[6] }}</h3>
+
                     </div>
+
                     <div class="right_bottom">
+
                         <div class="right_bottom_left">
-                            <span>xxx大学</span>  <span>课时数：xx</span>  <span>讲师xxx</span> <span>|</span> <span>参课人数：</span>
+
                         </div>
+
                     </div>
+
                 </div>
+
+            </li>
+
+
+
+            <li>
+
+                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+
+                <div class="right">
+
+                    <div class="right_top">
+
+                        <h3>{{ m[7] }}</h3>
+
+                    </div>
+
+                    <div class="right_bottom">
+
+                        <div class="right_bottom_left">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+
+
+            <li>
+
+                <div class="left"><img src="../static/tupian.jpg" alt=""></div>
+
+                <div class="right">
+
+                    <div class="right_top">
+
+                        <h3>{{ m[8] }}</h3>
+
+                    </div>
+
+                    <div class="right_bottom">
+
+                        <div class="right_bottom_left">
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </li>
 
         </ul>
 
     </div>
+
 </div>
+
 </body>
+
 </html>
