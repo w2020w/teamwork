@@ -82,6 +82,7 @@
         }
     </style>
 </head>
+
 <body>
 <div class="wrap">
     <div class="menu">
@@ -101,18 +102,17 @@
 </div>
     <div class="content">
         <ul>
-
             <li>
                 <form action="icourse1" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/6bceb775f751c6a6713be3aee3488288.png" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/6bceb775f751c6a6713be3aee3488288.png" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >女生穿搭技巧</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -121,15 +121,15 @@
 
             <li>
                 <form action="icourse2" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/eb04fe1ae8cc546ca007275c606643a9.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/eb04fe1ae8cc546ca007275c606643a9.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >传染病学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -138,15 +138,15 @@
 
             <li>
                 <form action="icourse3" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/529e35c9a6fd71141de534157cead8e6.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/529e35c9a6fd71141de534157cead8e6.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >共享经济</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -155,15 +155,15 @@
 
             <li>
                 <form action="icourse4" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/193_114c/f511acfe353258bdeb9e089f85e3a723.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/193_114c/f511acfe353258bdeb9e089f85e3a723.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >现代汉语言语交际</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -172,15 +172,15 @@
 
             <li>
                 <form action="icourse5" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/53c5e4e4a310a822ad8b29e3.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/53c5e4e4a310a822ad8b29e3.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >食品营养学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -189,15 +189,15 @@
 
             <li>
                 <form action="icourse6" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/54613f3bd9b2755d3f1099cbff92953c.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/54613f3bd9b2755d3f1099cbff92953c.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >知识产权法</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -206,15 +206,15 @@
 
             <li>
                 <form action="icourse7" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/193_114c/5dd1d9f1b9b30d7ff806e9420d56829f.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/193_114c/5dd1d9f1b9b30d7ff806e9420d56829f.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >医学分子生物学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -223,15 +223,15 @@
 
             <li>
                 <form action="icourse8" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/1fabc5f41960813356dfa9096de84137.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/1fabc5f41960813356dfa9096de84137.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学化学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -240,15 +240,15 @@
 
             <li>
                 <form action="icourse9" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/2bf1857e738464978c7e0ded96a4c174.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/2bf1857e738464978c7e0ded96a4c174.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >人体解剖学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -257,15 +257,15 @@
 
             <li>
                 <form action="icourse10" method="post">
-                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/a7d34fff1bd038cde8cb037bd8f4edbc.jpg" alt=""></div>
+                <div class="left"><img src="https://p.ananas.chaoxing.com/star3/270_169/a7d34fff1bd038cde8cb037bd8f4edbc.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >现场生命急救知识与技能</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南昌大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南昌大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
