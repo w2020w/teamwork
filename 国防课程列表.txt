@@ -101,18 +101,17 @@
 </div>
     <div class="content">
         <ul>
-
             <li>
                 <form action="gcourse1" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/99C2C3C318A33D2FDD4D0B0107CB1366.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/99C2C3C318A33D2FDD4D0B0107CB1366.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >液压传动</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -121,15 +120,15 @@
 
             <li>
                 <form action="gcourse2" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/A54D74FE43A30020DEF7A5A429D3E5FA.png" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/A54D74FE43A30020DEF7A5A429D3E5FA.png" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >工程力学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -138,15 +137,15 @@
 
             <li>
                 <form action="gcourse3" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/795BD3BE49B77ACBCEF08C2FF480043B.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/795BD3BE49B77ACBCEF08C2FF480043B.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >电工与电路基础</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -155,15 +154,15 @@
 
             <li>
                 <form action="gcourse4" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/809E2CAC8F5B8401EC63F247CEF4A4BD.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/809E2CAC8F5B8401EC63F247CEF4A4BD.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >传感器与测试技术</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -172,15 +171,15 @@
 
             <li>
                 <form action="gcourse5" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/6A03BBCE73068294F94B8816106F8558.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/6A03BBCE73068294F94B8816106F8558.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >神奇的电磁波</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -189,15 +188,15 @@
 
             <li>
                 <form action="gcourse6" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/85BE9DF01A3D722C9D9A1B4F36C42E29.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/85BE9DF01A3D722C9D9A1B4F36C42E29.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >智能机器人系统</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -206,15 +205,15 @@
 
             <li>
                 <form action="gcourse7" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/EAD8231A1E6E73822D42E3F5CBC7D0C9.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/EAD8231A1E6E73822D42E3F5CBC7D0C9.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学物理-力学和热学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -223,15 +222,15 @@
 
             <li>
                 <form action="gcourse8" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/F1EFDF18F582B2089190FDBF3E6AFAA0.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/F1EFDF18F582B2089190FDBF3E6AFAA0.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学物理-振动、波动和波动光学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -240,15 +239,15 @@
 
             <li>
                 <form action="gcourse9" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/4208E71077757C7118A1055EFC161D41.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/4208E71077757C7118A1055EFC161D41.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学物理-电磁学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -257,15 +256,15 @@
 
             <li>
                 <form action="gcourse10" method="post">
-                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/991CAC3A446FE037682C73ECCDC490B0.jpg" alt=""></div>
+                <div class="left"><img src="https://aten.net.cn/wp-content/uploads/icourse/1912/991CAC3A446FE037682C73ECCDC490B0.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >简明固体物理</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>国防科技大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 250px">国防科技大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
