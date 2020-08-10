@@ -101,18 +101,17 @@
 </div>
     <div class="content">
         <ul>
-
             <li>
                 <form action="ncourse1" method="post">
-                <div class="left"><img src="../static/nankai/1.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/1.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >生态文明</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -121,15 +120,15 @@
 
             <li>
                 <form action="ncourse2" method="post">
-                <div class="left"><img src="../static/nankai/2.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/2.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >中国古典诗词中的品格与修养</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -138,15 +137,15 @@
 
             <li>
                 <form action="ncourse3" method="post">
-                <div class="left"><img src="../static/nankai/3.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/3.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >健康导航与科学用药</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -155,15 +154,15 @@
 
             <li>
                 <form action="ncourse4" method="post">
-                <div class="left"><img src="../static/nankai/4.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/4.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >科研方法导论</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -172,15 +171,15 @@
 
             <li>
                 <form action="ncourse5" method="post">
-                <div class="left"><img src="../static/nankai/5.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/5.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >中华国学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -189,15 +188,15 @@
 
             <li>
                 <form action="ncourse6" method="post">
-                <div class="left"><img src="../static/nankai/6.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/6.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >拜占庭历史与文化</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -206,15 +205,15 @@
 
             <li>
                 <form action="ncourse7" method="post">
-                <div class="left"><img src="../static/nankai/7.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/7.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >诗词创作</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -223,15 +222,15 @@
 
             <li>
                 <form action="ncourse8" method="post">
-                <div class="left"><img src="../static/nankai/8.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/8.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >环境化学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -240,15 +239,15 @@
 
             <li>
                 <form action="ncourse9" method="post">
-                <div class="left"><img src="../static/nankai/9.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/9.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >世界文化美学导论</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -257,15 +256,15 @@
 
             <li>
                 <form action="ncourse10" method="post">
-                <div class="left"><img src="../static/nankai/10.JPG" alt=""></div>
+                <div class="left"><img src="../static/nankai/10.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >现代媒介素养</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>南开大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">南开大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
