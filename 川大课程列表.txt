@@ -35,7 +35,7 @@
             position: sticky;
             top:0px;
         }
-        .menu ul li{
+        .menu ul li {
             float: left;
             list-style-type: none;
             padding: 0 40px;
@@ -80,6 +80,10 @@
             color: darkgray;
             font-size: 12px;
         }
+        img{
+            width: 150px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -104,15 +108,15 @@
 
             <li>
                 <form action="ucourse1" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/6be2e3df-9202-4f8c-8f07-16d6d66aa6b5.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/6be2e3df-9202-4f8c-8f07-16d6d66aa6b5.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学化学实...</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -121,15 +125,15 @@
 
             <li>
                 <form action="ucourse2" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/2f1fb8c8-57e0-4905-8707-669e04075535.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/2f1fb8c8-57e0-4905-8707-669e04075535.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >内科学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -138,15 +142,15 @@
 
             <li>
                 <form action="ucourse3" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/86088861-dbc1-4018-980a-6c2aa111414c.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/86088861-dbc1-4018-980a-6c2aa111414c.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学物理实验</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -155,15 +159,15 @@
 
             <li>
                 <form action="ucourse4" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/a7e9e12b-ffdd-4eee-8ac1-c6b4f156dd8e.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/a7e9e12b-ffdd-4eee-8ac1-c6b4f156dd8e.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >药物化学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -172,15 +176,15 @@
 
             <li>
                 <form action="ucourse5" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7dacc808-2e63-4f16-8f16-716816f34696.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7dacc808-2e63-4f16-8f16-716816f34696.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >病理学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -189,15 +193,15 @@
 
             <li>
                 <form action="ucourse6" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/c497046a-0779-495c-9463-b13c8a4ebf9d.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/c497046a-0779-495c-9463-b13c8a4ebf9d.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >法医物证学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -206,15 +210,15 @@
 
             <li>
                 <form action="ucourse7" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7007d021-73ae-4877-88dc-00d576bf506d.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7007d021-73ae-4877-88dc-00d576bf506d.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >机械原理</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -223,15 +227,15 @@
 
             <li>
                 <form action="ucourse8" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/e25e936e-df0d-4373-839f-6b8d60568fb3.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/e25e936e-df0d-4373-839f-6b8d60568fb3.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >马克思主义...</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -240,15 +244,15 @@
 
             <li>
                 <form action="ucourse9" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7aba3c41-8353-4582-81f0-9877e34f3b58.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/7aba3c41-8353-4582-81f0-9877e34f3b58.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >光信息处理</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -257,21 +261,20 @@
 
             <li>
                 <form action="ucourse10" method="post">
-                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/b0e64af5-7807-442e-9d2e-5b70c25e827d.jpg" alt=""></div>
+                <div class="left"><img src="http://ccftp.scu.edu.cn:80/Download/b0e64af5-7807-442e-9d2e-5b70c25e827d.jpg" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >水力学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>四川大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">四川大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
                 </form>
             </li>
-
         </ul>
     </div>
 </div>
