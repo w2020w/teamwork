@@ -101,18 +101,17 @@
 </div>
     <div class="content">
         <ul>
-
             <li>
                 <form action="fcourse1" method="post">
-                <div class="left"><img src="../static/fudan/1.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/1.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >15世纪以前的世界</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -121,15 +120,15 @@
 
             <li>
                 <form action="fcourse2" method="post">
-                <div class="left"><img src="../static/fudan/2.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/2.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >《逻辑哲学论》导读</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -138,15 +137,15 @@
 
             <li>
                 <form action="fcourse3" method="post">
-                <div class="left"><img src="../static/fudan/3.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/3.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >财务管理</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -155,15 +154,15 @@
 
             <li>
                 <form action="fcourse4" method="post">
-                <div class="left"><img src="../static/fudan/4.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/4.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >美学与人生</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -172,15 +171,15 @@
 
             <li>
                 <form action="fcourse5" method="post">
-                <div class="left"><img src="../static/fudan/5.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/5.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >大学生创业导论</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -189,15 +188,15 @@
 
             <li>
                 <form action="fcourse6" method="post">
-                <div class="left"><img src="../static/fudan/6.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/6.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >数学分析</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -206,15 +205,15 @@
 
             <li>
                 <form action="fcourse7" method="post">
-                <div class="left"><img src="../static/fudan/7.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/7.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >信息安全</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -223,15 +222,15 @@
 
             <li>
                 <form action="fcourse8" method="post">
-                <div class="left"><img src="../static/fudan/8.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/8.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >系统解剖学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -240,15 +239,15 @@
 
             <li>
                 <form action="fcourse9" method="post">
-                <div class="left"><img src="../static/fudan/9.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/9.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >康复医学</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
@@ -257,15 +256,15 @@
 
             <li>
                 <form action="fcourse10" method="post">
-                <div class="left"><img src="../static/fudan/10.JPG" alt=""></div>
+                <div class="left"><img src="../static/fudan/10.JPG" alt="" style="width: 100%;height: 100%"></div>
                 <div class="right">
                     <div class="right_top">
                         <h3 >老年医学临床实践</h3>
                     </div>
                     <div class="right_bottom">
                         <div class="right_bottom_left">
-                            <span>复旦大学</span>
-                            <button type="submit" style="border: none;background-color: white">查看详情>></button>
+                            <span style="margin-right: 278px">复旦大学</span>
+                            <button onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" type="submit" style="border: none;background: none">查看详情>></button>
                         </div>
                     </div>
                 </div>
