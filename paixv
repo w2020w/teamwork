@@ -1,0 +1,180 @@
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/nanchang.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以点击量为降序排序后的结果赋值给result变量
+result=df.sort_values('点击量', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output6.xls")
+print('程序顺利执行完成')
+
+
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/guofang.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以参与人数为降序排序后的结果赋值给result变量
+result=df.sort_values('参与人数', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output1.xls")
+print('程序顺利执行完成')
+
+
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/beijing.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以参与人数为降序排序后的结果赋值给result变量
+result=df.sort_values('参与人数', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output.xls")
+print('程序顺利执行完成')
+
+
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/nankai.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以参与人数为降序排序后的结果赋值给result变量
+result=df.sort_values('参与人数', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output4.xls")
+print('程序顺利执行完成')
+
+
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/sichuan.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以点击量为降序排序后的结果赋值给result变量
+result=df.sort_values('点击量', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output5.xls")
+print('程序顺利执行完成')
+
+
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/zhongnan.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以参与人数为降序排序后的结果赋值给result变量
+result=df.sort_values('参与人数', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output2.xls")
+print('程序顺利执行完成')
+
+
+#本模块实现对Excel表格的数据进行排序的功能
+# author：王佳
+# create date：2020-08-08
+# updata date：2020-08-11
+#导入数据库pandas
+import pandas as pd
+#导入数据库xlwt
+import xlwt
+#读取Excel表格
+df=pd.read_excel('/Users/wangjia/Desktop/fudan.xls')
+#得到表格行列信息
+height,width = df.shape
+print(height,width,type(df))
+#输出排序前的数据
+print('排序之前')
+print(df)
+print('排序之后')
+#将以参与人数为降序排序后的结果赋值给result变量
+result=df.sort_values('参与人数', ascending= False)
+#输出排序后的数据
+print(result)
+#将排序后的数据写入表格
+result.to_excel(excel_writer="/Users/wangjia/Desktop/output3.xls")
+print('程序顺利执行完成')
