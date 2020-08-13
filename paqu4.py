@@ -7,20 +7,14 @@ import urllib
 import xlwt
 
 
-
 def main():
-    baseurl="http://opencourse.pku.edu.cn/course/opencourse2/classification.html"
+    baseurl="http://netclass.csu.edu.cn/Video/video/Csu.aspx"
     datalist=getData(baseurl)
-    savepath="hahoho.xls"
+    savepath="zhongnan.xls"
     saveData(datalist,savepath)
 
-
 #查找条件
-findLink=re.compile(r'<a href="..(.*?)">',re.S)
-findName=re.compile(r'<td><a href=".*?">(.*?)</a></td>',re.S)
-findTeacher=re.compile(r'<td>(.*?)</td>')
-findYear=re.compile(r'<td>(.*?)</td>')
-
+findInfo=re.compile(r'<td.*?>(.*?)</td>',re.S)
 
 #从网站的源代码中获取我们想要的数据
 def getData(baseurl):
@@ -35,20 +29,24 @@ def getData(baseurl):
         data=[]
         item=str(item)
 
-        link = re.findall(findLink, item)
-
-        year = re.findall(findYear, item)
-        if (len(year) == 4):#对我们想要的item进行数据采集
-            cyear = year[3]
-            clink=year[0]
-            cname=year[1]
-            cname=re.sub('<a href=".*?">','',cname)
-            cname=re.sub('</a>','',cname)
-            cteacher=year[2]
-            data.append(clink)
-            data.append(cname)
-            data.append(cteacher)
-            data.append(cyear)
+        info=re.findall(findInfo,item)
+        if(len(info)==5):#对我们想要的item进行数据采集
+            name=info[1]
+            name=re.sub('<font.*?><a href.*?>','',name)
+            name=re.sub('</a></font>','',name)
+            teacher=info[2]
+            teacher=re.sub('<font.*?>','',teacher)
+            teacher=re.sub('</font>','',teacher)
+            xueyuan=info[3]
+            xueyuan = re.sub('<font.*?>', '', xueyuan)
+            xueyuan = re.sub('</font>', '', xueyuan)
+            link=info[1]
+            link=re.sub('<font.*?>','',link)
+            link=re.sub('<a href="','',link)
+            link=re.sub('">.*?</a></font>','',link)
+            data.append(name)
+            data.append(teacher)
+            data.append(xueyuan)
             data.append(link)
 
         else:
@@ -56,10 +54,9 @@ def getData(baseurl):
             data.append('')
             data.append('')
             data.append('')
-            data.append('')
 
         datalist.append(data)
-    #print(datalist)
+    print(datalist)
     return datalist
 
 #从网站获取源代码
@@ -84,25 +81,17 @@ def saveData(datalist,savepath):
     print("save...")
     book=xlwt.Workbook(encoding="utf-8",style_compression=0)
     sheet=book.add_sheet('haha',cell_overwrite_ok=True)
-    col=("序号","课程名","教师","录制年份","链接")
-    for i in range(0,5):
+    col=("课程名","教师","学院","链接")
+    for i in range(0,4):
         sheet.write(0,i,col[i])
-    for i in range(0,53):
+    for i in range(0,52):
         print("第%d条"%i)
         data=datalist[i]
-        for j in range(0,5):
+        for j in range(0,4):
             sheet.write(i+1,j,data[j])
 
     book.save(savepath)
-
+    
 #执行main方法
 main()
-
-
-
-
-
-
-
-
 

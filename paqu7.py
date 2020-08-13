@@ -6,20 +6,15 @@ import urllib.error
 import urllib
 import xlwt
 
-
-
 def main():
-    baseurl="http://opencourse.pku.edu.cn/course/opencourse2/classification.html"
+    baseurl="http://jwc.nankai.edu.cn/2020/0205/c5106a264802/page.htm"
     datalist=getData(baseurl)
-    savepath="hahoho.xls"
+    savepath="nankai.xls"
     saveData(datalist,savepath)
 
-
 #查找条件
-findLink=re.compile(r'<a href="..(.*?)">',re.S)
-findName=re.compile(r'<td><a href=".*?">(.*?)</a></td>',re.S)
-findTeacher=re.compile(r'<td>(.*?)</td>')
-findYear=re.compile(r'<td>(.*?)</td>')
+findName=re.compile(r'<span.*?>(.*?)</span>',re.S)
+findLink=re.compile(r'<a href="(.*?)"',re.S)
 
 
 #从网站的源代码中获取我们想要的数据
@@ -34,25 +29,22 @@ def getData(baseurl):
         #print(item)
         data=[]
         item=str(item)
-
+        name=re.findall(findName,item)
         link = re.findall(findLink, item)
-
-        year = re.findall(findYear, item)
-        if (len(year) == 4):#对我们想要的item进行数据采集
-            cyear = year[3]
-            clink=year[0]
-            cname=year[1]
-            cname=re.sub('<a href=".*?">','',cname)
-            cname=re.sub('</a>','',cname)
-            cteacher=year[2]
-            data.append(clink)
+        if(len(name)==5):#对我们想要的item进行数据采集
+            cname=name[1]
+            teacher=name[2]
+            pingtai=name[3]
+            pingtai=re.sub('<span.*?>','',pingtai)
+            if(len(link)==1):
+                clink=link[0]
+            else:
+                clink=''
             data.append(cname)
-            data.append(cteacher)
-            data.append(cyear)
-            data.append(link)
-
+            data.append(teacher)
+            data.append(pingtai)
+            data.append(clink)
         else:
-            data.append('')
             data.append('')
             data.append('')
             data.append('')
@@ -84,25 +76,15 @@ def saveData(datalist,savepath):
     print("save...")
     book=xlwt.Workbook(encoding="utf-8",style_compression=0)
     sheet=book.add_sheet('haha',cell_overwrite_ok=True)
-    col=("序号","课程名","教师","录制年份","链接")
-    for i in range(0,5):
-        sheet.write(0,i,col[i])
-    for i in range(0,53):
+
+    for i in range(0,51):
         print("第%d条"%i)
         data=datalist[i]
-        for j in range(0,5):
+        for j in range(0,4):
             sheet.write(i+1,j,data[j])
 
     book.save(savepath)
 
-#执行main方法
+
+# 执行main方法
 main()
-
-
-
-
-
-
-
-
-
