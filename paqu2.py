@@ -1,3 +1,11 @@
+'''
+爬虫
+author:钟毓
+creat date:2020-8-6
+update date:2020-8-13
+'''
+
+
 import requests
 from bs4 import BeautifulSoup
 import re
